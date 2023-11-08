@@ -15,7 +15,7 @@ export default function Home() {
             <Text className="text-4xl">Sahil Kaling</Text>
             <Text className="text-xl my-2 border-2 p-2">
               {" "}
-              master of it's not a bug, it's a feature excuse.
+              master of it&apos;s not a bug, it&apos;s a feature excuse.
             </Text>
             <Divider
               mt={2}
