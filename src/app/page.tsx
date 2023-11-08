@@ -179,9 +179,35 @@ export default function Home() {
               </Text>
             </Box>
           </Flex>
-         
           <Flex
             className="side flex flex-col justify-center p-5 m-2 mt-0 md:ml-0"
+            backgroundColor={"white"}
+          >
+            <Text className="text-2xl">
+              testimonials <span className="text-[#4E93AA]">(4)</span>{" "}             
+            </Text>
+            <Box className="flex flex-col justify-center items-center my-2">
+            <Box className="flex flex-row justify-start items-center my-2 p-4 px-8 bg-[#DEEEFD]">
+                <Image src={"/unpay.webp"} alt="pawpal" className="w-[125px] h-[125px]" width={150} height={150} />
+                <Text className="text-lg  mx-4">
+                  Hey there ! I am Sahil Kaling currently a final year CS
+                  undergrad at VIT Vellore.
+                </Text>
+              </Box>
+              <Box className="flex flex-row justify-start items-center my-2 p-4 px-8 bg-[#EEF8FE]">
+                <Image src={"/unpay.webp"} alt="pawpal" className="w-[125px] h-[125px]" width={150} height={150} />
+                <Text className="text-lg  mx-4">
+                Hey there ! I am Sahil Kaling currently a final year CS
+                  undergrad at VIT Vellore.
+                </Text>
+              </Box>
+            </Box>
+            
+        </Flex>
+        
+        </Box>
+        <Flex
+            className="side flex flex-col justify-center p-5 m-4 ml-0"
 
             backgroundColor={"white"}
           >
@@ -209,46 +235,6 @@ export default function Home() {
                 view more
               </Text>
             </Box>
-          </Flex>
-        </Box>
-        <Flex
-            className="side flex flex-col justify-center p-5 m-4 ml-0"
-            backgroundColor={"white"}
-          >
-            <Text className="text-2xl">
-              testimonials <span className="text-[#4E93AA]">(4)</span>{" "}             
-            </Text>
-            <Box className="flex flex-col justify-center items-center my-2">
-            <Box className="flex flex-row justify-start items-center my-2 p-4 px-8 bg-[#DEEEFD]">
-                <Image src={"/myphoto.jpeg"} alt="pawpal" className="w-[125px] h-[125px]" width={150} height={150} />
-                <Text className="text-lg  mx-4">
-                  Hey there ! I am Sahil Kaling currently a final year CS
-                  undergrad at VIT Vellore.
-                </Text>
-              </Box>
-              <Box className="flex flex-row justify-start items-center my-2 p-4 px-8 bg-[#EEF8FE]">
-                <Image src={"/myphoto.jpeg"} alt="pawpal" className="w-[125px] h-[125px]" width={150} height={150} />
-                <Text className="text-lg  mx-4">
-                Hey there ! I am Sahil Kaling currently a final year CS
-                  undergrad at VIT Vellore.
-                </Text>
-              </Box>
-              <Box className="flex flex-row justify-start items-center my-2 p-4 px-8 bg-[#DEEEFD]">
-                <Image src={"/myphoto.jpeg"} alt="pawpal" className="w-[125px] h-[125px]" width={150} height={150} />
-                <Text className="text-lg  mx-4">
-                Hey there ! I am Sahil Kaling currently a final year CS
-                  undergrad at VIT Vellore.
-                </Text>
-              </Box>
-              <Box className="flex flex-row justify-start items-center my-2 p-4 px-8 bg-[#EEF8FE]">
-                <Image src={"/myphoto.jpeg"} alt="pawpal" className="w-[125px] h-[125px]" width={150} height={150} />
-                <Text className="text-lg  mx-4">
-                Hey there ! I am Sahil Kaling currently a final year CS
-                  undergrad at VIT Vellore.
-                </Text>
-              </Box>
-            </Box>
-            
           </Flex>
       </Box>
     </>
