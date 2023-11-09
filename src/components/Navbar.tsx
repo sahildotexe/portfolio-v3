@@ -25,11 +25,15 @@ interface Props {
   children: React.ReactNode;
 }
 
-const Links = ["Profile", "Projects", "Writings"];
+const Links = [
+  { name: "Profile", href: "/" },
+  { name: "Projects", href: "/projects" },
+  { name: "Writings", href: "/writings" },
+  { name: "Resume", href: "/resume.pdf" },
+]
 
 const NavLink = (props: Props) => {
   const { children } = props;
-
   return (
     <Box as="a" px={2} py={1} rounded={"md"} href={"#"} className="text-2xl">
       {children}
@@ -63,7 +67,7 @@ export default function Navbar() {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <Box as={"a"} px={2} py={1} rounded={"md"} href={link.href} className="text-2xl" key={link.href}>{link.name}</Box>
               ))}
             </HStack>
           </HStack>
@@ -72,7 +76,7 @@ export default function Navbar() {
               <Text px={2} py={4} className="text-[#36527D] text-2xl font-normal">
                 sahilkaling@gmail.com
               </Text>
-              <Box
+              {/* <Box
                 as="a"
                 px={2} py={4}
                 mx={3}
@@ -81,7 +85,7 @@ export default function Navbar() {
                 className="text-2xl"
               >
                 Logout
-              </Box>
+              </Box> */}
               {/* <Box >
                 <HStack p={3} className="bg-[#36527D] rounded-xl h-[10px] m-[40px]"  >
                     <Input p={2} backgroundColor={"white"} color={"black"} className="bg-white" placeholder="search orkut" />
@@ -96,7 +100,7 @@ export default function Navbar() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link.name}>{link.name}</NavLink>
               ))}
             </Stack>
           </Box>

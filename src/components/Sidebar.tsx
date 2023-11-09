@@ -27,11 +27,11 @@ export default function Sidebar() {
             <Divider mt={2} orientation='horizontal' bg='#EAEAEC' borderWidth={"1px"} />
                 </Box>
                 <Box className="my-2 bg-[#EFF9FF] ml-4 w-full md:mx-0 md:w-auto">
-                <Box className="flex flex-row border-solid	border-2 p-2 border-[#DDE9F8] border-b-0">
+                <Box className="flex flex-row border-solid	border-2 p-2 border-[#DDE9F8] border-b-0" as={"a"} href="/">
                     <Image src="/profile.png" alt="add friend" className="w-[20px]" width={170} height={200} />
                     <Text className="text-xl mx-2 font-medium text-[#535C69]">profile</Text>
                 </Box>
-                <Box className="flex flex-row border-solid	border-2 p-2 border-[#DDE9F8] border-b-0">
+                <Box className="flex flex-row border-solid	border-2 p-2 border-[#DDE9F8] border-b-0" as={"a"} href="/projects">
                     <Image src="/projects.png" alt="add friend" className="w-[24px]" width={170} height={200} />
                     <Text className="text-xl mx-2 font-medium text-[#535C69]">projects</Text>
                 </Box>

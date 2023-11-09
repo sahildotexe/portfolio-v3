@@ -24,7 +24,7 @@ export default function Home() {
               borderWidth={"1px"}
             />
             <Box className="flex flex-row">
-              <Box className="my-2">
+              {/* <Box className="my-2">
                 <Text className="text-xl text-[#535C69]">fans</Text>
                 <Box className="flex flex-row">
                   <Image
@@ -36,7 +36,7 @@ export default function Home() {
                   />
                   <Text className="text-xl mx-1 text-[#535C69]">69</Text>
                 </Box>
-              </Box>
+              </Box> */}
               <Box className="my-2 mx-2">
                 <Text className="text-xl text-[#535C69]">trusty</Text>
                 <Box className="flex flex-row mt-1">
@@ -206,6 +206,7 @@ export default function Home() {
         </Flex>
         
         </Box>
+        <Box className="flex flex-col">
         <Flex
             className="side flex flex-col justify-center p-5 m-4 ml-0"
 
@@ -235,7 +236,95 @@ export default function Home() {
                 view more
               </Text>
             </Box>
-          </Flex>
+        </Flex>
+        <Flex
+            className="side flex flex-col justify-center p-5 m-4 mt-0 ml-0 max-w-[600px]"
+
+            backgroundColor={"white"}
+          >
+            <Text className="text-2xl">
+              technologies <span className="text-[#4E93AA]">(10+)</span>{" "}
+              
+            </Text>
+            <Box className="flex flex-row justify-center items-center flex-wrap">
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] p-3 mr-4 h-[120px] md:h-[120px]">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/react.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">React</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/tailwind.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl  text-[#4E93AA]">Tailwind</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/javascript.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Javascript</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/typescript.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Typescript</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/nextjs.webp"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Nextjs</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/angular.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Angular</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/mongodb.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">MongoDB</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/postgres.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">PostgresSQL</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/nodejs.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Nodejs</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/express.webp"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Expressjs</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/aws.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">AWS</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/docker.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Docker</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/git.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Git</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/solidity.svg"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Solidity</Text>
+            </Box>
+            
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/python.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Python</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/cpp.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">C++</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/java.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Java</Text>
+            </Box>
+            <Box className="flex flex-col justify-center items-center my-2 bg-[#d9d8d848] h-[120px] md:h-[120px] p-3 mr-4">
+              <Image className="rounded-md h-[60px] md:h-[80px]" src={"/golang.png"} alt="pawpal" width={80} height={150} />
+              <Text className="text-xl text-[#4E93AA]">Golang</Text>
+            </Box>
+            </Box>
+          
+        </Flex>
+        </Box>
+
       </Box>
     </>
   );
