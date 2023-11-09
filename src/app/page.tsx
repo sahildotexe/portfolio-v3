@@ -173,8 +173,8 @@ export default function Home() {
                 </Text>
               </Box>
             </Box>
-            <Box className="my-2" as={"a"} href="#">
-              <Text className="underline text-[#318c96]">
+            <Box className="my-2">
+              <Text as={"a"} href="/resume.pdf" className="underline text-[#318c96]">
                 view full profile
               </Text>
             </Box>
@@ -231,8 +231,8 @@ export default function Home() {
             </Box>
             
             </Box>
-            <Box className="my-1 mb-0" as={"a"} href="#">
-              <Text className="underline text-[#318c96]">
+            <Box className="my-1 mb-0" >
+              <Text as={"a"} href="/projects" className="underline text-[#318c96] w-[200px]">
                 view more
               </Text>
             </Box>

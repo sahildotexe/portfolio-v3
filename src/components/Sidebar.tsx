@@ -43,7 +43,7 @@ export default function Sidebar() {
                     <Image src="/testimonials.png" alt="add friend" className="w-[25px] h-[25px]" width={170} height={200} />
                     <Text className="text-xl mx-2 font-medium text-[#535C69]">testimonials</Text>
                 </Box> */}
-                <Box className="flex flex-row border-solid	border-2 p-2 border-[#DDE9F8]">
+                <Box as={"a"} href="/resume.pdf" className="flex flex-row border-solid	border-2 p-2 border-[#DDE9F8]">
                     <Image src="/resume.png" alt="add friend" className="w-[20px]" width={170} height={200} />
                     <Text className="text-xl mx-2 font-medium text-[#535C69]">resume</Text>
                 </Box>
